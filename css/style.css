@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+}
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
+/************************/
+/* HEADER */
+/************************/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffff;
+  height: 9.6rem;
+  padding: 4rem 10rem;
+}
+.logo {
+  width: 18.2rem;
+  height: 5.4rem;
+}
+/************************/
+/* NAVIGATION*/
+/************************/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 2.5rem;
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+  margin-right: 1.5rem;
+  display: inline-block;
+  text-decoration: none;
+  color: #8a94a6;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  transition: all 0.3s;
+  list-style: none;
+}
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  width: 17.9rem;
+  padding: 1.6rem 3.3rem 1.7rem 3.3rem;
+  border-radius: 1rem;
+  color: #fff;
+  background-color: #377dff;
+}
+.link-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+/************************/
+/* Section Hero */
+/************************/
+.section-hero {
+  padding: 10rem;
+}
+.heading-primary {
+  width: 52.8rem;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 6rem;
+  line-height: 7.3rem;
+  color: #323b4b;
+  margin-bottom: 3.4rem;
+}
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.hero-description {
+  width: 46.6rem;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 3.5rem;
+  color: #8a94a6;
+  margin-bottom: 3.6rem;
+}
+.hero-btn {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  margin-right: 1.5rem;
+  color: #377dff;
+}
+.hero-image img {
+  position: relative;
+  border-radius: 1rem;
+  width: 60.4rem;
+  height: 61.6rem;
+}
+.hero-image {
+  justify-self: end;
+}
+.play-icon {
+  width: 4rem;
+  height: 4rem;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #377dff;
+  position: absolute;
+  top: 25.6rem;
+  right: 60rem;
+}
