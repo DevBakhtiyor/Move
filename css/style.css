@@ -106,21 +106,91 @@ body {
   color: #377dff;
 }
 .hero-image img {
-  position: relative;
   border-radius: 1rem;
   width: 60.4rem;
   height: 61.6rem;
 }
 .hero-image {
+  position: relative;
   justify-self: end;
 }
-.play-icon {
-  width: 4rem;
-  height: 4rem;
-  color: #fff;
+.hero-icon {
+  width: 7rem;
+  height: 7rem;
   border-radius: 50%;
   background-color: #377dff;
   position: absolute;
-  top: 25.6rem;
-  right: 60rem;
+  top: 4.6rem;
+  left: 6rem;
+}
+.play-icon {
+  width: 5rem;
+  height: 5rem;
+  color: #fff;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+/************************/
+/* Section Offer */
+/************************/
+
+.section-offer {
+  padding: 10.8rem;
+  background-color: #fafbfc;
+}
+.offer-text-box .offer-text,
+.offer-text-box .offer-description {
+  margin: 0 auto;
+  text-align: center;
+}
+.offer-text {
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 7.3rem;
+  color: #323b4b;
+  width: 41.4rem;
+  margin-bottom: 3.5rem !important;
+}
+.offer-description {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 3.5rem;
+  width: 81rem;
+  color: #8a94a6;
+  margin-bottom: 8.1rem !important;
+}
+.offer-boxs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.1rem;
+  row-gap: 3.7rem;
+  margin-bottom: 12.3rem;
+}
+.offer-box {
+  padding: 3.1rem;
+  width: 60.4rem;
+  height: 28.5rem;
+  border-radius: 1.5rem;
+  background-color: #ffff;
+  box-shadow: 0px 50px 77px rgba(176, 183, 195, 0.22);
+}
+.box-icon {
+  width: 8rem;
+  height: 8rem;
+  margin-bottom: 2.9rem;
+}
+.box-text {
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 3.4rem;
+  color: #323b4b;
+  margin-bottom: 2.1rem;
+}
+.box-description {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  color: #8a94a6;
+  width: 537px;
 }
