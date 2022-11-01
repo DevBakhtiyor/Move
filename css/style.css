@@ -182,36 +182,36 @@ body {
   color: #8a94a6;
   margin-bottom: 8.1rem;
 }
-.offer-boxs {
+.offer-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 3.1rem;
   row-gap: 3.7rem;
   margin-bottom: 12.3rem;
 }
-.offer-box:hover {
+.offer-card:hover {
   box-shadow: 0px 50px 77px rgba(176, 183, 195, 0.22);
 }
-.offer-box {
+.offer-card {
   padding: 3.1rem;
   width: 60.4rem;
   height: 28.5rem;
   border-radius: 1.5rem;
   background-color: #ffff;
 }
-.box-icon {
+.card-icon {
   width: 8rem;
   height: 8rem;
   margin-bottom: 2.9rem;
 }
-.box-text {
+.card-title {
   font-weight: 700;
   font-size: 2.8rem;
   line-height: 3.4rem;
   color: #323b4b;
   margin-bottom: 2.1rem;
 }
-.box-description {
+.card-description {
   font-weight: 500;
   font-size: 1.8rem;
   line-height: 3rem;
@@ -223,13 +223,13 @@ body {
 /************************/
 
 .section-dream-job {
-  padding: 14.3rem 10rem;
+  padding: 10rem;
   background-color: #ffffff;
 }
 .job {
-  display: grid;
-  grid-template-columns: 50% 50%;
+  display: flex;
   align-items: center;
+  column-gap: 13.8rem;
 }
 .job-image {
   width: 94.4rem;
@@ -241,6 +241,7 @@ body {
 }
 .job-title {
   width: 55.5rem;
+  height: 22.1rem;
   font-style: normal;
   font-weight: 700;
   font-size: 6rem;
@@ -262,7 +263,7 @@ body {
 }
 
 /************************/
-/* Section Dream Job */
+/* Vacancy Job */
 /************************/
 
 .section-vacancy {
@@ -431,7 +432,7 @@ body {
 }
 .footer {
   display: grid;
-  grid-template-columns: 30% 17.5% 17.5% 17.5% 17.5%;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
 }
 .copy {
   font-style: normal;
