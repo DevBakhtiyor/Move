@@ -1,0 +1,184 @@
+/************************/
+/* Below 1440px (Smaller Desktops) */
+/************************/
+
+@media only screen and (max-width: 90em) {
+}
+
+/************************/
+/* Below 1200px (Landscape Tablets) */
+/************************/
+
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 50%; /* 8px */
+  }
+}
+
+/************************/
+/* Below 1024px (Landscape Tablets) */
+/************************/
+
+@media only screen and (max-width: 64em) {
+  /* -------- Nav -------- */
+  .main-nav {
+    display: none;
+  }
+  .hero-heading,
+  .offer-heading,
+  .job-heading,
+  .vacancy-heading {
+    font-size: 4rem;
+    line-height: 5.5rem;
+  }
+  #menu-icon {
+    width: auto;
+    height: 4.1rem;
+    display: block;
+    cursor: pointer;
+  }
+  #close-icon {
+    width: auto;
+    height: 4.1rem;
+    display: block;
+    cursor: pointer;
+  }
+  .mobile-nav-header {
+    height: 13.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  . .mobile-nav-links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    align-items: center;
+  }
+  .mobile-nav-link {
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 3.2rem;
+    color: #4e5d78;
+  }
+  .mobile-nav-cta {
+    text-align: center;
+  }
+
+  .btn-resume {
+    padding-left: 7.3rem;
+    padding-right: 7.3rem;
+  }
+
+  .offer-description,
+  .vacancy-description {
+    max-width: 68.4rem;
+    line-height: 3.5rem;
+  }
+  footer .nav-col:last-child {
+    display: none;
+  }
+}
+
+/************************/
+/* Below 900px (Tablets) */
+/************************/
+
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%; /* 8px */
+  }
+
+  .container {
+    padding: 0 8rem;
+  }
+
+  .section-vacancy .section-vacancy-content {
+    padding-top: 8.8rem;
+    padding-bottom: 8.3rem;
+  }
+
+  .logo-col {
+    flex: 100%;
+    margin-bottom: 3.2rem;
+  }
+}
+
+/************************/
+/* Below 768px (Tablets) */
+/************************/
+
+@media only screen and (max-width: 48em) {
+  html {
+    font-size: 43.75%; /* 7px */
+  }
+
+  .container {
+    padding: 0 6rem;
+  }
+}
+
+/************************/
+/* Below 480px (Mobile Phone) */
+/************************/
+
+@media only screen and (max-width: 30em) {
+  .container {
+    padding: 0 4rem;
+  }
+  .section-hero-content,
+  .section-dream-job-content {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 6.1rem;
+  }
+
+  .offer-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2.9rem;
+  }
+
+  .vacancy-categories {
+    display: none;
+  }
+
+  .vacancy {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2.2rem;
+    align-items: center;
+    justify-items: center;
+    padding: 3.2rem;
+  }
+  .btn-resume {
+    width: 33.5rem;
+    max-width: 24.4rem;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 3rem;
+    padding: 2.1rem 4.6rem;
+  }
+
+  .footer {
+    padding-top: 9.6rem;
+    padding-bottom: 8.5rem;
+  }
+  .footer-content {
+    gap: 3.2rem;
+  }
+  .logo-col {
+    margin-bottom: 3.2rem;
+  }
+  .footer-link {
+    font-size: 1.8rem;
+  }
+}

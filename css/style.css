@@ -300,7 +300,7 @@ body {
   background-color: #fafbfc;
   padding: 12.5rem;
 }
-.vacancy-title {
+.vacancy-heading {
   font-style: normal;
   font-weight: 70rem;
   font-size: 6rem;
@@ -413,7 +413,6 @@ body {
   gap: 2.8rem;
 }
 .footer-title {
-  max-width: 28.2rem;
   font-style: normal;
   font-weight: 500;
   font-size: 2rem;
