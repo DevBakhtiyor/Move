@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -18,81 +18,90 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-
     <title>Move</title>
   </head>
   <body>
-    <header class="header container">
-      <a href="#">
-        <img class="logo" src="img/Logo.svg" alt="Move logo" />
-      </a>
-      <nav class="main-nav">
-        <ul class="main-nav-list">
-          <li>
-            <a class="main-nav-link" href="#">Home</a>
-            <img
-              class="link-icon"
-              src="img/icon-chevron-down-2.svg"
-              alt="icon chevron down"
-            />
-          </li>
-          <li>
-            <a class="main-nav-link" href="#">Pages</a>
-            <img
-              class="link-icon"
-              src="img/icon-chevron-down-2.svg"
-              alt="icon chevron down"
-            />
-          </li>
-          <li>
-            <a class="main-nav-link" href="#">Blog</a>
-            <img
-              class="link-icon"
-              src="img/icon-chevron-down-2.svg"
-              alt="icon chevron down"
-            />
-          </li>
-          <li>
-            <a class="main-nav-link" href="#">Portfolio</a>
-            <img
-              class="link-icon"
-              src="img/icon-chevron-down-2.svg"
-              alt="icon chevron down"
-            />
-          </li>
-        </ul>
-        <button class="nav-btn">Get Started</button>
-      </nav>
+    <header class="header" id="header-sticky">
+      <div class="container header-content">
+        <a href="#">
+          <img class="logo" src="img/Logo.svg" alt="Move logo" />
+        </a>
+        <nav class="main-nav">
+          <a class="main-nav-link" href="#"
+            >Home <img src="img/icon-chevron-down-2.svg" alt="down-arrow"
+          /></a>
+          <a class="main-nav-link" href="#"
+            >Pages <img src="img/icon-chevron-down-2.svg" alt="down-arrow"
+          /></a>
+          <a class="main-nav-link" href="#"
+            >Blog <img src="img/icon-chevron-down-2.svg" alt="down-arrow"
+          /></a>
+          <a class="main-nav-link" href="#"
+            >Portfolio <img src="img/icon-chevron-down-2.svg" alt="down-arrow"
+          /></a>
+          <button class="nav-btn btn-primary nav__cta-btn">Get Started</button>
+        </nav>
+        <img src="img/icon-menu 1.svg" alt="Menu" id="menu-icon" />
+        <nav class="mobile-nav">
+          <div class="container">
+            <div class="mobile-nav__header">
+              <img src="./img/Logo.svg" alt="Move" class="nav__logo" />
+              <img
+                src="./img/icons/close-icon.svg"
+                alt="Close"
+                id="close-icon"
+              />
+            </div>
+
+            <ul class="mobile-navi-links">
+              <li>
+                <a class="mobile-nav-link" href="#home">Home </a>
+              </li>
+              <li>
+                <a class="mobile-nav-link" href="#pages">Pages </a>
+              </li>
+              <li>
+                <a class="mobile-nav-link" href="#blog">Blog </a>
+              </li>
+
+              <li>
+                <a class="mobile-nav-link" href="#Portfolio">Portfolio </a>
+              </li>
+
+              <button class="nav-btn btn-primary mobile-nav__cta">
+                Get Started
+              </button>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main>
       <section class="section-hero">
-        <div class="container">
-          <div class="hero">
-            <div class="hero-text-box">
-              <h1 class="heading-primary">
-                We are a small team that thinks big!
-              </h1>
-              <p class="hero-description">
-                Have you been looking for a job for a long time where you will
-                be welcome? Send your resume to work with us!
-              </p>
-              <a class="hero-btn" href="#">Find an opening &rarr;</a>
-            </div>
-            <div class="hero-image">
-              <img
-                src="img/photo-of-man-standing-in-front-of-people-3182829 (1).svg"
-                alt="Small team standup"
-              />
-              <div class="play-icon">
-                <img src="img/Path_106.svg" alt="Play icon" />
-              </div>
+        <div class="container section-hero-content">
+          <div class="hero-title">
+            <h1 class="hero-heading">We are a small team that thinks big!</h1>
+            <p class="hero-description">
+              Have you been looking for a job for a long time where you will be
+              welcome? Send your resume to work with us!
+            </p>
+            <a class="hero-btn" href="#">Find an opening &rarr;</a>
+          </div>
+          <div class="hero-section-image">
+            <img
+              class="hero-img"
+              src="img/photo-of-man-standing-in-front-of-people-3182829 (1).svg"
+              alt="Small team standup"
+            />
+            <div class="play-btn">
+              <img src="img/Path_106.svg" alt="Play button" />
             </div>
           </div>
         </div>
       </section>
       <section class="section-offer">
-        <div class="container">
-          <h2 class="offer-title">What we offer</h2>
+        <div class="container section-offer-content">
+          <h2 class="offer-heading">What we offer</h2>
           <p class="offer-description">
             We offer you a huge number of advantages when applying for a job
             with us. Check out a few basic but important ones below.
@@ -104,7 +113,7 @@
                 src="img/icon-4.svg"
                 alt="File tray icon"
               />
-              <p class="card-title">Full social package</p>
+              <p class="card-heading">Full social package</p>
               <p class="card-description">
                 Our company offers you a full social package when you apply for
                 a job with us.
@@ -116,7 +125,7 @@
                 src="img/icon-3.svg"
                 alt="Clipboard icon"
               />
-              <p class="card-title">Equipped workplace</p>
+              <p class="card-heading">Equipped workplace</p>
               <p class="card-description">
                 We will equip your workplace at the expense of the company. You
                 can order everything you need for your work.
@@ -124,7 +133,7 @@
             </div>
             <div class="offer-card">
               <img class="card-icon" src="img/icon-2.svg" alt="Cafe icon" />
-              <p class="card-title">Free meals</p>
+              <p class="card-heading">Free meals</p>
               <p class="card-description">
                 During breaks between work, you can eat in our cafe for free.
                 You will have a huge selection of food available.
@@ -136,7 +145,7 @@
                 src="img/icon.svg"
                 alt="Game controller icon"
               />
-              <p class="card-title">Game room</p>
+              <p class="card-heading">Game room</p>
               <p class="card-description">
                 If you are too tired you can distract yourself from thinking
                 about working in the game room.
@@ -146,90 +155,78 @@
         </div>
       </section>
       <section class="section-dream-job">
-        <div class="container">
-          <div class="job">
-            <div class="job-image">
-              <img src="img/Image-10.svg" alt="Small team" />
-            </div>
-            <div class="job-titles">
-              <p class="job-title">Find your dream job in our company</p>
-              <p class="job-description">
-                We hope that you will find a job that you have been dreaming
-                about for a long time. If we don't have any vacancies send us
-                your resume!
-              </p>
-            </div>
+        <div class="container section-dream-job-content">
+          <div class="job-image">
+            <img src="img/Image-10.svg" alt="Small team" />
+          </div>
+          <div class="job-title">
+            <p class="job-heading">Find your dream job in our company</p>
+            <p class="job-description">
+              We hope that you will find a job that you have been dreaming about
+              for a long time. If we don't have any vacancies send us your
+              resume!
+            </p>
           </div>
         </div>
       </section>
       <section class="section-vacancy">
-        <div class="container">
-          <p class="vacancy-title">Free vacancy</p>
+        <div class="container section-vacancy-content">
+          <h4 class="vacancy-title">Free vacancy</h4>
           <p class="vacancy-description">
             Jobs that are available from us and looking for their own people!
             Browse our vacancies and find the one that is right for you!
           </p>
-          <div class="vacancy">
-            <div class="vacancy-list-header">
+          <div class="vacancies">
+            <div class="vacancy-categories">
               <p>Position</p>
               <p>Department</p>
               <p>Location</p>
             </div>
-            <div class="vacancy-list">
-              <p>Motion Designer</p>
-              <p>Design</p>
-              <p>San Francisko</p>
+            <div class="vacancy">
+              <p class="vacancy-positions">Motion Designer</p>
+              <p class="vacancy-type">Design</p>
+              <p class="vacancy-location">San Francisko</p>
             </div>
-            <div class="vacancy-list">
-              <p>Art Director</p>
-              <p>Design</p>
-              <p>San Francisko</p>
+            <div class="vacancy">
+              <p class="vacancy-positions">Art Director</p>
+              <p class="vacancy-type">Design</p>
+              <p class="vacancy-location">San Francisko</p>
             </div>
-            <div class="vacancy-list">
-              <p>Customer Relations</p>
-              <p>Support</p>
-              <p>New York</p>
+            <div class="vacancy">
+              <p class="vacancy-positions">Customer Relations</p>
+              <p class="vacancy-type">Support</p>
+              <p class="vacancy-location">New York</p>
             </div>
-            <div class="vacancy-list">
-              <p>React Developer</p>
-              <p>Engineering</p>
-              <p>San Francisko</p>
+            <div class="vacancy">
+              <p class="vacancy-positions">React Developer</p>
+              <p class="vacancy-type">Engineering</p>
+              <p class="vacancy-location">San Francisko</p>
             </div>
           </div>
-          <button class="vacancy-btn">
-            Don't see a good fit? Submit your resume
-          </button>
+          <div class="vacancy-btn">
+            <button class="btn-resume btn-secondary">
+              Don't see a good fit? Submit your resume
+            </button>
+          </div>
         </div>
       </section>
     </main>
     <footer class="section-footer">
       <div class="container">
-        <div class="footer">
+        <div class="footer-content">
           <div class="logo-col">
-            <div class="footer-logo">
-              <img alt="Move logo" src="img/Logo.svg" />
-            </div>
+            <img class="footer-logo" alt="Move logo" src="img/Logo.svg" />
             <p class="footer-title">
               Move - Multipurpose Design Template will help you develop your
               website design.
             </p>
-            <div class="social-links">
-              <div class="social-link">
-                <a href=""><img src="img/dribbble-3.svg" alt="Web Icon" /></a>
-              </div>
-              <div class="social-link">
-                <a href=""
-                  ><img src="img/facebook-3.svg" alt="Facebook icon"
-                /></a>
-              </div>
-              <div class="social-link">
-                <a href=""><img src="img/Path_104.svg" alt="Twitter icon" /></a>
-              </div>
-              <div class="social-link">
-                <a href=""
-                  ><img src="img/youtube-3.svg" alt="Youtube icon"
-                /></a>
-              </div>
+            <div class="social-media-logos">
+              <a href=""><img src="img/dribbble-3.svg" alt="Web Icon" /></a>
+              <a href=""
+                ><img src="img/facebook-3.svg" alt="Facebook icon"
+              /></a>
+              <a href=""><img src="img/Path_104.svg" alt="Twitter icon" /></a>
+              <a href=""><img src="img/youtube-3.svg" alt="Youtube icon" /></a>
             </div>
           </div>
           <div class="nav-col">
