@@ -37,11 +37,14 @@
     display: block;
     cursor: pointer;
   }
-  #close-icon {
+  .close-icon {
     width: auto;
     height: 4.1rem;
     display: block;
     cursor: pointer;
+  }
+  .mobile-nav-open {
+    width: 100%;
   }
   .mobile-nav-header {
     height: 13.3rem;
@@ -49,10 +52,11 @@
     align-items: center;
     justify-content: space-between;
   }
-  . .mobile-nav-links {
+  .mobile-nav-links {
     position: absolute;
     top: 50%;
     left: 50%;
+    list-style: none;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
@@ -68,6 +72,11 @@
     font-weight: 500;
     line-height: 3.2rem;
     color: #4e5d78;
+    text-decoration: none;
+  }
+  #close-icon {
+    width: 4.1rem;
+    height: 4.1rem;
   }
   .mobile-nav-cta {
     text-align: center;

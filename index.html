@@ -10,6 +10,15 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script src="./js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <title>Move</title>
   </head>
   <body>
@@ -31,21 +40,20 @@
           <a class="main-nav-link" href="#"
             >Portfolio <img src="img/icon-chevron-down-2.svg" alt="down-arrow"
           /></a>
-          <button class="nav-btn btn-primary nav__cta-btn">Get Started</button>
+          <button class="nav-btn btn-primary nav-ta-btn">Get Started</button>
         </nav>
         <img src="img/icon-menu 1.svg" alt="Menu" id="menu-icon" />
         <nav class="mobile-nav">
           <div class="container">
             <div class="mobile-nav-header">
-              <img src="./img/Logo.svg" alt="Move" class="nav__logo" />
-              <img
-                src="./img/icons/close-icon.svg"
-                alt="Close"
+              <img src="./img/Logo.svg" alt="Move" class="nav-logo" />
+              <ion-icon
                 id="close-icon"
-              />
+                name="close-outline"
+                alt="Close icon"
+              ></ion-icon>
             </div>
-
-            <ul class="mobile-navi-links">
+            <ul class="mobile-nav-links">
               <li>
                 <a class="mobile-nav-link" href="#home">Home </a>
               </li>
@@ -256,7 +264,10 @@
             </ul>
           </div>
         </div>
-        <p class="copy">&copy; 2019-2020 Move Multipurpose Design Template.</p>
+        <p class="copy">
+          &copy; <span class="year">2019-2020</span> Move Multipurpose Design
+          Template.
+        </p>
       </div>
     </footer>
   </body>
